@@ -50,6 +50,26 @@ L'installation est faite **une seule fois par PC**. Elle est ensuite active à c
 
 Les mods ne sont pas synchronisés avec ton compte Claude. Sur chaque nouveau poste, relance simplement la commande d'installation ci-dessus. Il faut que Claude Code y soit installé et que tu sois connecté avec ton compte (les limites dépendent de l'abonnement).
 
+### Migrer depuis l'ancien dépôt `claude-credit-bar`
+
+Le dépôt s'appelait auparavant `rbgt/claude-credit-bar`. Il a été supprimé puis recréé sous le nom `rbgt/credit-bar`, donc l'ancienne adresse ne redirige pas. Sur un PC où le mod avait été installé depuis l'ancien dépôt, la barre continue de s'afficher grâce au cache local, mais les mises à jour échouent. Pour passer sur le nouveau dépôt :
+
+```
+claude plugin marketplace add rbgt/credit-bar
+claude plugin install credit-bar@credit-bar
+claude plugin uninstall credit-bar@claude-credit-bar
+claude plugin marketplace remove claude-credit-bar
+```
+
+Puis `/reload-plugins` dans une session ouverte, ou relance Claude Code. `claude plugin list` doit alors afficher `credit-bar@credit-bar` uniquement.
+
+Si tu as aussi un clone local du dépôt, mets à jour son adresse :
+
+```
+git remote set-url origin https://github.com/rbgt/credit-bar.git
+git pull
+```
+
 ## Mise à jour
 
 ```
