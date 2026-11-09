@@ -1,4 +1,4 @@
-# claude-credit-bar
+# credit-bar
 
 Mod pour [Claude Code](https://claude.com/claude-code) qui affiche en continu, dans la ligne de statut, le **modèle en cours** et le **pourcentage d'usage restant** de ton abonnement.
 
@@ -32,7 +32,7 @@ Tu es bloqué dès que **l'une** des fenêtres arrive à 0 %, même si l'autre e
 Dans une session Claude Code (terminal) :
 
 ```
-/plugin install credit-bar --marketplace rbgt/claude-credit-bar
+/plugin install credit-bar --marketplace rbgt/credit-bar
 ```
 
 1. Réponds `y` à la question « Add marketplace? ».
@@ -41,7 +41,7 @@ Dans une session Claude Code (terminal) :
 Équivalent en ligne de commande :
 
 ```
-claude plugin install credit-bar --marketplace rbgt/claude-credit-bar
+claude plugin install credit-bar --marketplace rbgt/credit-bar
 ```
 
 L'installation est faite **une seule fois par PC**. Elle est ensuite active à chaque nouvelle session, y compris après une reconnexion.
@@ -78,19 +78,19 @@ Tout est dans [`hooks/register.ts`](hooks/register.ts) :
 Un plugin installé est copié par Claude Code : pour garder tes réglages après une mise à jour, fais un **fork** de ce dépôt, modifie-le, puis installe depuis ton fork :
 
 ```
-/plugin install credit-bar --marketplace <ton-compte>/claude-credit-bar
+/plugin install credit-bar --marketplace <ton-compte>/credit-bar
 ```
 
 Pour tester une modification sans installer, charge le dossier directement :
 
 ```
-claude --plugin-dir /chemin/vers/claude-credit-bar
+claude --plugin-dir /chemin/vers/credit-bar
 ```
 
 Vérification avant de publier :
 
 ```
-claude plugin validate /chemin/vers/claude-credit-bar
+claude plugin validate /chemin/vers/credit-bar
 ```
 
 ## Comment ça marche

@@ -1,5 +1,5 @@
 {
-  "name": "claude-credit-bar",
+  "name": "credit-bar",
   "owner": { "name": "rbgt" },
   "metadata": { "description": "Barre de statut Claude Code : modèle en cours et usage restant" },
   "plugins": [
